@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +78,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prj_Capa_Datps\Prj_Capa_Datps.csproj">
+      <Project>{9878e894-f124-48e8-a309-6c1f9d777a0c}</Project>
+      <Name>Prj_Capa_Datps</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prj_Capa_Entidad\Prj_Capa_Entidad.csproj">
+      <Project>{e2b65d6e-ec24-4b98-b18e-af09042dd9c1}</Project>
+      <Name>Prj_Capa_Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prj_Capa_Negocio\Prj_Capa_Negocio.csproj">
+      <Project>{d4f5dc8c-d352-4ed2-b03f-7187f1312826}</Project>
+      <Name>Prj_Capa_Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
